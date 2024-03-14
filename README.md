@@ -8,12 +8,14 @@ We have selected three reports in XML format to be our dataset:
 - atom (30 May 2020).xml - containing 1144 samples and 50 features
 - WhatsApp (03 May 2020).xml - containing 635 samples and 49 features
 - codedx.xml - containing 620 samples and 46 features
+
 We will be working with some categorical features that we deem impactful toward the predictions of the status indicator. These features include:
 - Severity: Severity level of the vulnerability, such as “info”, “low”, “medium or “high”
 - Common Weakness Enumeration (CWE) Identifiers: Integer that identifies common types of software weaknesses associated with the vulnerabilities
 - Description: Detailed textual descriptions of the detected vulnerabilities, including their nature and potential impact
 - Tool Category and Name: Category and name of the tool used (e.g., ESLint may fall under “xss” or “security”, PMD may fall under “Best Practices”, etc)
 - Rule Name: Guideline violated by the detected vulnerabilities (e.g., “Using Components with Known Vulnerabilities”, “Undeclared variables are global by default”, etc)
+
 Our model will have to predict the status indicator of binary variable type, classifying vulnerabilities as 1 or 0, representing “Escalated” and “False Positive” (not escalated).
 
 ## Research Questions
