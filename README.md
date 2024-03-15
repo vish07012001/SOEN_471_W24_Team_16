@@ -30,7 +30,7 @@ To address the research questions, we plan to implement and compare the followin
 - Random Forest: Random Forest is selected as an ensemble learning method based on decision trees. It offers improved robustness and accuracy by aggregating multiple decision trees' predictions. This ensemble approach helps mitigate the risk of overfitting associated with individual decision trees and generally results in better generalization performance.
   
 ### Model Training and Evaluation
-We will conduct model training using the provided dataset and evaluate the performance of each algorithm through metrics such as accuracy, precision, recall, and F1 score.
+We will conduct model training using the provided dataset and evaluate the performance of each algorithm through metrics such as precision, recall, and F1 score.
 
 ## Project Goals
 The primary focus of our project is to develop and refine the specified machine learning algorithms. Should time permit, we will also work towards improving the user interface functionalities.
