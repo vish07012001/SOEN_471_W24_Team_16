@@ -1,0 +1,16 @@
+﻿Data Preprocessing
+1. Loading the Data
+2. Concatenating Dataframes
+3. Encoding Categorical Features: Since machine learning algorithms typically require numerical input, categorical features like Severity, Tool Category, Tool Name, and Rule Name were encoded into numerical format. Label encoding was employed for this purpose, where each unique category in a feature was assigned a unique integer label.
+4. Text Vectorization (TF-IDF): The 'Description' feature, which contained detailed textual descriptions of vulnerabilities, required special treatment due to its nature. Textual data cannot be directly used as input for most machine learning algorithms. Therefore, it was transformed into a numerical format using TF-IDF vectorization.
+5. Combining Text Vectors with Encoded Features: The combined dataset (X) contained both the TF-IDF transformed textual vectors and the encoded categorical features. Here's what X looks like:
+* The first part of X consists of the TF-IDF transformed textual descriptions. Each row corresponds to a sample (or document) in the dataset, and each column corresponds to a word (or token) in the vocabulary. The values in each cell represent the TF-IDF score of the corresponding word in the corresponding document.
+* The second part of X consists of other encoded features (excluding Description and Status). These features are represented as numerical values obtained after encoding categorical variables or other preprocessing steps.
+Combined, X represents the complete set of input features that will be used to train the machine learning model.
+
+
+Model Evaluation
+* From the evaluation results of the Decision Tree Classifier and the Random Forest Classifier, it appears that the default hyperparameters for both models already yield high performance. 
+* Upon fine-tuning the models, changing the test size, or applying cross-validation, the evaluation results may not necessarily improve. The default settings of the hyperparameters (such as the maximum depth of the tree, minimum samples per leaf, etc.) result in a model that is not too simple or too complex. In other words, the default hyperparameters strike a good balance between capturing the underlying patterns in the data and avoiding overfitting.
+* Surprisingly, the Random Forest Classifier, even with default hyperparameters, did not outperform the Decision Tree Classifier as anticipated. Both classifiers achieve similar performance metrics, indicating that in this particular dataset and task, the ensemble approach of Random Forest did not offer significant advantages over the single Decision Tree model.
+* Overall, the results suggest that the default hyperparameters of both models work well for this dataset. Fine-tuning the hyperparameters did not lead to substantial improvements in performance, indicating that the default settings already capture the underlying patterns in the data effectively.

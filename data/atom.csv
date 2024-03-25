@@ -1,0 +1,1165 @@
+Status,Severity,CWE,Description,Tool Category,Tool Name,Rule Name
+escalated,high,937,"Versions of `https-proxy-agent` prior to 2.2.3 are vulnerable to Machine-In-The-Middle. The package fails to enforce TLS on the socket if the proxy server responds the to the request with a HTTP status different than 200. This allows an attacker with access to the proxy server to intercept unencrypted communications, which may include sensitive information such as credentials.",,Dependency-Check,Using Components with Known Vulnerabilities
+escalated,critical,937,"Versions of `open` before 6.0.0 are vulnerable to command injection when unsanitized user input is passed in.
+
+The package does come with the following warning in the readme:
+
+```
+The same care should be taken when calling open as if you were calling child_process.exec directly. If it is an executable it will run in a new shell.
+```",,Dependency-Check,Using Components with Known Vulnerabilities
+escalated,medium,937,,,,Using Components with Known Vulnerabilities
+escalated,high,937,,,,Using Components with Known Vulnerabilities
+escalated,high,937,Versions of `cryptiles` prior to 4.1.2 are vulnerable to Insufficient Entropy. The `randomDigits()` method does not provide sufficient entropy and its generates digits that are not evenly distributed.,,Dependency-Check,Using Components with Known Vulnerabilities
+escalated,critical,937,,,,Using Components with Known Vulnerabilities
+escalated,critical,937,,,,Using Components with Known Vulnerabilities
+escalated,high,937,Versions of `fstream` prior to 1.0.12 are vulnerable to Arbitrary File Overwrite. Extracting tarballs containing a hardlink to a file that already exists in the system and a file that matches the hardlink will overwrite the system's file with the contents of the extracted file. The `fstream.DirWriter()` function is vulnerable.,,Dependency-Check,Using Components with Known Vulnerabilities
+escalated,high,937,Stack-based buffer overflow in the is_git_directory function in setup.c in Git before 1.7.2.1 allows local users to gain privileges via a long gitdir: field in a .git file in a working copy.,,Dependency-Check,Using Components with Known Vulnerabilities
+escalated,high,937,"Versions of `tar` prior to 4.4.2 for 4.x and 2.2.2 for 2.x are vulnerable to Arbitrary File Overwrite. Extracting tarballs containing a hardlink to a file that already exists in the system, and a file that matches the hardlink will overwrite the system's file with the contents of the extracted file.",,Dependency-Check,Using Components with Known Vulnerabilities
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,22,Found fs.unlinkSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,"Found fs.symlinkSync with non literal argument at index 0,1",security,ESLint,Path Traversal
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+escalated,high,22,Found fs.existsSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Task' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,227,This type or method is decorated with [SuppressUnmanagedCodeSecurity] which reduce the number of security checks done when unmanaged code is called. Ensure that use of this attribute does not compromise the security of the application.,,Gendarme,API Abuse
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'IEnumerator`1' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,,,,Resource Management
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,465,,,,Invalid Pointer
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'StreamReader' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'ISymbolReader' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Task' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,287,"This type contains read-only array(s), however elements inside the array(s) are not read-only. Replace the array with a method returning a clone of the array or a read-only collection.",,Gendarme,Authentication and Authorization
+escalated,medium,227,,,,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,485,"The entry point (Main) of this assembly is visible to the outside world (ref: C# Programming Guide). Reduce the visibility of the method or type if your language allows it. It may not be possible in some language, like VB.NET). Change method visibility to private or internal.",,Gendarme,Insufficient Encapsulation
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Process' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,22,Found fs.unlinkSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,"This type contains native fields but does not have a finalizer. Add a finalizer, calling Dispose(true), to release unmanaged resources.",,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,227,,,,API Abuse
+escalated,medium,465,A visible method does not check its parameter(s) for null values. Since the caller is unknown you should always verify all of your parameters to protect yourself.,,Gendarme,Invalid Pointer
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'NonDisposingStream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+false-positive,medium,665,'exports' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,high,227,This type or method is decorated with [SuppressUnmanagedCodeSecurity] which reduce the number of security checks done when unmanaged code is called. Ensure that use of this attribute does not compromise the security of the application.,,Gendarme,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Task' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'SevenZipVolume' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,medium,557,,,,Concurrency
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,,,,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,"Found require(""child_process"")",security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'Buffer' is not defined.,,ESLint,Initialization
+escalated,high,77,Found non-literal argument in require,security,ESLint,Command Injection
+escalated,high,697,,,,Comparison
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,22,Found fs.writeFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.writeFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,693,"Marshaling information for string types is missing and what is required may be different from what you expected the default to be. Add [DllImport CharSet=] to the method or [MarshalAs] on the parameter(s) Parameter 'lpImageFileName', of type 'StringBuilder', does not have [MarshalAs] attribute, yet no [DllImport CharSet=] is set for the method 'QueryFullProcessImageName'.",,Gendarme,Marshal Strings In PInvoke Declarations 
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Package' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'FileStream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,189,"This method casts a [U]IntPtr to a 32-bit value which won't work on 64-bit architectures. You should always use 64 bits integers, signed or unsigned, when doing pointer math. Type cast to 'System.Int32'.",,Gendarme,Numeric Error
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This type contains disposable field(s) which aren't disposed. Ensure that every disposable field(s) is correctly disposed. System.Void SharpCompress.Archives.AbstractWritableArchive`2::Dispose() should call base.Dispose().,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'NonDisposingStream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,,The function setTimeout can be unsafe,scanjs-rules,ESLint,Call setTimeout
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.open with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.writeFile with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,medium,399,,,,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,227,,,,API Abuse
+escalated,high,695,,,,Prefer Safe Handle 
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.existsSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.open with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'XmlTextReader' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,medium,399,,,,Resource Management
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'RSA' is not disposed before being re-assigned.,,Gendarme,Resource Management
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,medium,465,A visible method does not check its parameter(s) for null values. Since the caller is unknown you should always verify all of your parameters to protect yourself.,,Gendarme,Invalid Pointer
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,medium,755,,,,Check New Exception Without Throwing 
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'MemoryStream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,,,,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,227,This type or method is decorated with [SuppressUnmanagedCodeSecurity] which reduce the number of security checks done when unmanaged code is called. Ensure that use of this attribute does not compromise the security of the application.,,Gendarme,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,medium,399,,,,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Package' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,227,"Although you are implementing the ISerializable interface, there are some fields that aren't going to be serialized and aren't marked with the [NonSerialized] attribute. Either add the [NonSerialized] attribute to the field or serialize it. This will help developers better understand your code and make errors easier to find.",,Gendarme,API Abuse
+escalated,high,693,"Marshaling information for string types is missing and what is required may be different from what you expected the default to be. Add [DllImport CharSet=] to the method or [MarshalAs] on the parameter(s) Parameter 'pFileName', of type 'String', does not have [MarshalAs] attribute, yet no [DllImport CharSet=] is set for the method 'BeginUpdateResource'.",,Gendarme,Marshal Strings In PInvoke Declarations 
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,high,227,This type or method is decorated with [SuppressUnmanagedCodeSecurity] which reduce the number of security checks done when unmanaged code is called. Ensure that use of this attribute does not compromise the security of the application.,,Gendarme,API Abuse
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Task' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'X509Store' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,medium,227,,,,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,189,"This method casts a [U]IntPtr to a 32-bit value which won't work on 64-bit architectures. You should always use 64 bits integers, signed or unsigned, when doing pointer math. Type cast to 'System.Int32'.",,Gendarme,Numeric Error
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Process' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Stream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'ISymbolReader' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+escalated,high,77,Found non-literal argument in require,security,ESLint,Command Injection
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,22,Found fs.open with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFile with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Function Call Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readdirSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,22,Found fs.writeFile with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,227,This type or method is decorated with [SuppressUnmanagedCodeSecurity] which reduce the number of security checks done when unmanaged code is called. Ensure that use of this attribute does not compromise the security of the application.,,Gendarme,API Abuse
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'IEnumerator`1' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,medium,227,"There are potentially dangerous calls into your code. You should remove or replace the call to the dangerous method. You are calling to System.Reflection.Assembly System.Reflection.Assembly::LoadFrom(System.String), which is a potentially problematic method",,Gendarme,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,189,"The result of an integral division is cast to a Single or Double. This is questionable unless you really want the truncated result. Cast an operand to Single or Double, not the result.",,Gendarme,Numeric Error
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Process' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,465,A visible method does not check its parameter(s) for null values. Since the caller is unknown you should always verify all of your parameters to protect yourself.,,Gendarme,Invalid Pointer
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.chmodSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,22,Found fs.chmodSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,"Found require(""child_process"")",security,ESLint,Command Injection
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.chmodSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.chmodSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.existsSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+escalated,high,22,Found fs.writeFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'ImageReader' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The serialization constructor should be private since this type is sealed.",,Gendarme,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,465,,,,Invalid Pointer
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Process' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,399,,,,Resource Management
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Task' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Trace' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,high,695,,,,Prefer Safe Handle 
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,227,,,,API Abuse
+escalated,medium,399,,,,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,,,,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'XmlTextReader' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,high,227,This type or method is decorated with [SuppressUnmanagedCodeSecurity] which reduce the number of security checks done when unmanaged code is called. Ensure that use of this attribute does not compromise the security of the application.,,Gendarme,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Task' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,465,,,,Invalid Pointer
+escalated,medium,465,A visible method does not check its parameter(s) for null values. Since the caller is unknown you should always verify all of your parameters to protect yourself.,,Gendarme,Invalid Pointer
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.writeFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'FileStream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,medium,399,This type contains disposable field(s) which aren't disposed. Ensure that every disposable field(s) is correctly disposed. Since inner is Disposable Dispose() should call inner.Dispose(),,Gendarme,Resource Management
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Stream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,227,,,,API Abuse
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,,,,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,"Found require(""child_process"")",security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,medium,399,,,,Resource Management
+escalated,medium,252,This method calls Assembly.GetEntryAssembly which may return null if not called from the root application domain. Avoid depending on Assembly.GetEntryAssembly inside reusable code.,,Gendarme,Return Value
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'BinaryReader' is not disposed of (at least not locally).,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Process' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,557,"This instance method writes to static fields. This may cause problem with multiple instances in multithreaded applications. Move initialization to the static constructor or ensure appropriate locking. The static field 'opt', of type 'Squirrel.Update.StartupOption'. is being set in an instance method.",,Gendarme,Concurrency
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This type contains disposable field(s) which aren't disposed. Ensure that every disposable field(s) is correctly disposed. Since streamReader is Disposable Dispose() should call streamReader.Dispose(),,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,252,The method ignores the result value from a method call. Don't ignore the result value. Unused object of type 'System.Void System.Uri::.ctor(System.String)' created.,,Gendarme,Return Value
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.realpathSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'SHA1Managed' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The serialization constructor should be protected (family) since this type is not sealed.",,Gendarme,API Abuse
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Rfc2898DeriveBytes' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,557,The use of the event does not seems protected properly against NullReferenceException and/or race conditions. Fix the event use to make sure it won't be null or susceptible to a race condition. Possible race condition since field 'PackageSourcesSaved' is accessed directly.,,Gendarme,Concurrency
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'RarCrcStream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,This type contains disposable field(s) which aren't disposed. Ensure that every disposable field(s) is correctly disposed. Since entriesForCurrentReadStream is Disposable Dispose() should call entriesForCurrentReadStream.Dispose(),,Gendarme,Resource Management
+escalated,medium,465,,,,Invalid Pointer
+escalated,medium,465,,,,Invalid Pointer
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,465,,,,Invalid Pointer
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,227,,,,API Abuse
+escalated,high,77,,,,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,,,,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,,,,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,22,"Found fs.renameSync with non literal argument at index 0,1",security,ESLint,Path Traversal
+escalated,high,22,Found fs.readdirSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,22,Found fs.writeFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,77,,,,Command Injection
+escalated,high,22,Found fs.writeFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,77,,,,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readdirSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readdirSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.writeFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,22,Found fs.readdirSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,22,Found fs.createReadStream with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readdirSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,22,Found fs.writeFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,227,This type or method is decorated with [SuppressUnmanagedCodeSecurity] which reduce the number of security checks done when unmanaged code is called. Ensure that use of this attribute does not compromise the security of the application.,,Gendarme,API Abuse
+escalated,medium,399,This type contains disposable field(s) which aren't disposed. Ensure that every disposable field(s) is correctly disposed. Since dialog is Disposable Dispose() should call dialog.Dispose(),,Gendarme,Resource Management
+escalated,medium,557,"This instance method writes to static fields. This may cause problem with multiple instances in multithreaded applications. Move initialization to the static constructor or ensure appropriate locking. The static field 'nameAndArgumentsRegex', of type 'System.Text.RegularExpressions.Regex'. is being set in an instance method.",,Gendarme,Concurrency
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.existsSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.writeFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.existsSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,77,"Found require(""child_process"")",security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,,,,Initialization
+escalated,high,22,Found fs.existsSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,,,,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.existsSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'BinaryReader' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.existsSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,693,"Marshaling information for string types is missing and what is required may be different from what you expected the default to be. Add [DllImport CharSet=] to the method or [MarshalAs] on the parameter(s) Parameter 'pType', of type 'String', does not have [MarshalAs] attribute, yet no [DllImport CharSet=] is set for the method 'UpdateResource'.",,Gendarme,Marshal Strings In PInvoke Declarations 
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Process' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,388,,,,Error Handling
+escalated,medium,465,A visible method does not check its parameter(s) for null values. Since the caller is unknown you should always verify all of your parameters to protect yourself.,,Gendarme,Invalid Pointer
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This type contains disposable field(s) which aren't disposed. Ensure that every disposable field(s) is correctly disposed. Since updateLock is Disposable Dispose() should call updateLock.Dispose(),,Gendarme,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'XmlNodeList' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,high,693,"Marshaling information for string types is missing and what is required may be different from what you expected the default to be. Add [DllImport CharSet=] to the method or [MarshalAs] on the parameter(s) Parameter 'lpszFileName', of type 'String', does not have [MarshalAs] attribute, yet no [DllImport CharSet=] is set for the method 'GetFileVersionInfoSize'.",,Gendarme,Marshal Strings In PInvoke Declarations 
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,252,The method ignores the result value from a method call. Don't ignore the result value. Unused object of type 'System.Void System.Windows.Application::.ctor()' created.,,Gendarme,Return Value
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'BinaryWriter' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Process' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,189,"This method casts a [U]IntPtr to a 32-bit value which won't work on 64-bit architectures. You should always use 64 bits integers, signed or unsigned, when doing pointer math. Call to 'IntPtr.ToInt32()'.",,Gendarme,Numeric Error
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Task' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,227,,,,API Abuse
+escalated,medium,399,This type contains disposable field(s) which aren't disposed. Ensure that every disposable field(s) is correctly disposed. Since handle is Disposable Dispose() should call handle.Dispose(),,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.writeFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+escalated,medium,189,,,,Numeric Error
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'exports' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'Buffer' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'exports' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,,,,Initialization
+escalated,high,22,Found fs.readdirSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,"Found require(""child_process"")",security,ESLint,Command Injection
+escalated,medium,399,,,,Resource Management
+escalated,high,227,This type or method is decorated with [SuppressUnmanagedCodeSecurity] which reduce the number of security checks done when unmanaged code is called. Ensure that use of this attribute does not compromise the security of the application.,,Gendarme,API Abuse
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Stream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,227,,,,API Abuse
+escalated,medium,227,,,,API Abuse
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'NonDisposingStream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'WebResponse' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,medium,388,,,,Error Handling
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Found non-literal argument in require,security,ESLint,Command Injection
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,227,,,,API Abuse
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'ImageAnimationController' is not guaranteed to be disposed of.,,Gendarme,Resource Management
+escalated,high,227,This type or method is decorated with [SuppressUnmanagedCodeSecurity] which reduce the number of security checks done when unmanaged code is called. Ensure that use of this attribute does not compromise the security of the application.,,Gendarme,API Abuse
+escalated,high,227,This type or method is decorated with [SuppressUnmanagedCodeSecurity] which reduce the number of security checks done when unmanaged code is called. Ensure that use of this attribute does not compromise the security of the application.,,Gendarme,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,388,,,,Error Handling
+escalated,medium,227,,,,API Abuse
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Stream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,388,,,,Error Handling
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Stream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,465,,,,Invalid Pointer
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,557,The use of the event does not seems protected properly against NullReferenceException and/or race conditions. Fix the event use to make sure it won't be null or susceptible to a race condition. Possible race condition since field 'NavigateError' is accessed directly.,,Gendarme,Concurrency
+escalated,medium,399,This type contains disposable field(s) which aren't disposed. Ensure that every disposable field(s) is correctly disposed. Since _response is Disposable Dispose() should call _response.Dispose(),,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'IDisposable' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,medium,755,,,,Check New Exception Without Throwing 
+escalated,medium,189,This method casts the result of an integer multiplication into a larger integer. This may result in an overflow before the cast can be done. Cast the operands instead of the result.,,Gendarme,Numeric Error
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'ImageAnimationController' is not guaranteed to be disposed of.,,Gendarme,Resource Management
+escalated,high,693,"Marshaling information for string types is missing and what is required may be different from what you expected the default to be. Add [DllImport CharSet=] to the method or [MarshalAs] on the parameter(s) Parameter 'pszPath', of type 'String', does not have [MarshalAs] attribute, yet no [DllImport CharSet=] is set for the method 'SHGetFileInfo'.",,Gendarme,Marshal Strings In PInvoke Declarations 
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,465,,,,Invalid Pointer
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'SHA1Managed' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,465,A visible method does not check its parameter(s) for null values. Since the caller is unknown you should always verify all of your parameters to protect yourself.,,Gendarme,Invalid Pointer
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'BinaryReader' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,388,"Every delegate passed to native code must include an exception block which spans the entire method and has a catch all block. Surround the entire method body with a try/catch block. An exception occurred while verifying this method. This failure can probably be ignored, it's most likely due to an uncommon code sequence in the method the rule didn't understand. Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index",,Gendarme,Error Handling
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'IDisposable' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,22,Found fs.existsSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.openSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'XmlNodeList' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,high,695,,,,Prefer Safe Handle 
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'BinaryReader' is not guaranteed to be disposed of.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,227,,,,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,693,"Marshaling information for string types is missing and what is required may be different from what you expected the default to be. Add [DllImport CharSet=] to the method or [MarshalAs] on the parameter(s) Parameter 'pSubBlock', of type 'String', does not have [MarshalAs] attribute, yet no [DllImport CharSet=] is set for the method 'VerQueryValue'.",,Gendarme,Marshal Strings In PInvoke Declarations 
+escalated,high,77,,,,Command Injection
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,"Found require(""child_process"")",security,ESLint,Command Injection
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Found non-literal argument in require,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,,,,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'XmlNodeList' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Process' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,227,"The required constructor for ISerializable is not present in this type. Add a (private for sealed, protected otherwise) serialization constructor for this type. The required constructor for ISerializable is not present in this type.",,Gendarme,API Abuse
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,high,693,"Marshaling information for string types is missing and what is required may be different from what you expected the default to be. Add [DllImport CharSet=] to the method or [MarshalAs] on the parameter(s) Parameter 'lpszFileName', of type 'String', does not have [MarshalAs] attribute, yet no [DllImport CharSet=] is set for the method 'GetFileVersionInfo'.",,Gendarme,Marshal Strings In PInvoke Declarations 
+escalated,high,693,"Marshaling information for string types is missing and what is required may be different from what you expected the default to be. Add [DllImport CharSet=] to the method or [MarshalAs] on the parameter(s) Parameter 'lpBuffer', of type 'String', does not have [MarshalAs] attribute, yet no [DllImport CharSet=] is set for the method 'FormatMessage'.",,Gendarme,Marshal Strings In PInvoke Declarations 
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.existsSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,79,HTML passed in to function 'options.usage',xss,ESLint,Cross-site Scripting (XSS)
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.existsSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,77,"Found require(""child_process"")",security,ESLint,Command Injection
+escalated,high,77,Found child_process.exec() with non Literal first argument,security,ESLint,Command Injection
+escalated,high,77,Found child_process.exec() with non Literal first argument,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,medium,465,,,,Invalid Pointer
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Task' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,697,,,,Comparison
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,high,22,Found fs.readdirSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,22,"Found fs.rename with non literal argument at index 0,1",security,ESLint,Path Traversal
+escalated,high,77,,,,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'ReadOnlySubStream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Task' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,185,Found non-literal argument to RegExp Constructor,security,ESLint,Detect non literal regexp
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+escalated,high,77,Generic Object Injection Sink,security,ESLint,Command Injection
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'module' is not defined.,,ESLint,Initialization
+escalated,high,695,The type uses System.IntPtr or System.UIntPtr instead of System.Runtime.InteropServices.SafeHandle. Consider changing the code to use SafeHandle.,,Gendarme,Prefer Safe Handle 
+escalated,medium,557,The use of the event does not seems protected properly against NullReferenceException and/or race conditions. Fix the event use to make sure it won't be null or susceptible to a race condition. Possible race condition since field 'Done' is accessed directly.,,Gendarme,Concurrency
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'MemoryStream' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,,,,Resource Management
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'__dirname' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.chmodSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+escalated,high,22,Found fs.existsSync with non literal argument at index 0,security,ESLint,Path Traversal
+escalated,high,22,Found fs.createWriteStream with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+false-positive,medium,665,,,,Initialization
+escalated,high,22,Found fs.readFileSync with non literal argument at index 0,security,ESLint,Path Traversal
+false-positive,medium,665,'process' is not defined.,,ESLint,Initialization
+false-positive,medium,665,'require' is not defined.,,ESLint,Initialization
+escalated,medium,227,"Although you are implementing the ISerializable interface, there are some fields that aren't going to be serialized and aren't marked with the [NonSerialized] attribute. Either add the [NonSerialized] attribute to the field or serialize it. This will help developers better understand your code and make errors easier to find.",,Gendarme,API Abuse
+escalated,medium,399,A method of an IDisposable type does not throw System.ObjectDisposedException. Throw ObjectDisposedException if the object has been disposed.,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Package' is not disposed of (is this a fluent-like API ?).,,Gendarme,Resource Management
+escalated,medium,399,This disposable local is not guaranteed to be disposed of before the method returns. Use a 'using' statement or surround the local's usage with a try/finally block. Local of type 'Process' is not disposed of (at least not locally).,,Gendarme,Resource Management
+escalated,medium,227,,,,API Abuse
