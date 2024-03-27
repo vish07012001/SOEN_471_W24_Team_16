@@ -1,11 +1,13 @@
 ﻿Data Preprocessing
 1. Loading the Data
 2. Concatenating Dataframes
-3. Unwanted columns like 'Unnamed' were removed from the Dataframes.
-4. Encoding Categorical Features: Since machine learning algorithms typically require numerical input, categorical features like Severity, Tool Category, Tool Name, and Rule Name were encoded into numerical format using one-hot encoding. This method converts each unique category within a feature into a separate binary (0 or 1) column, ensuring that all the input data can be utilized by machine learning models.
-5. Null values and duplicate values were also removed from the Dataframe.
-6. Text Vectorization (TF-IDF): The 'Description' feature, which contained detailed textual descriptions of vulnerabilities, required special treatment due to its nature. Textual data cannot be directly used as input for most machine learning algorithms. Therefore, it was transformed into a numerical format using TF-IDF vectorization.
-7. Combining Text Vectors with Encoded Features: The combined dataset (X) contained both the TF-IDF transformed textual vectors and the encoded categorical features. Here's what X looks like:
+3. Handling Null Values:
+* Categorical features were handled by introducing a new category 'missing' using SimpleImputer with the 'constant' strategy, which fills missing values with a the value 'missing'.
+* Numerical feature 'CWE' was handled by imputing missing values with the median using SimpleImputer with the 'median' strategy.
+* Textual feature 'Description' was handled by replacing missing values with a placeholder text 'missing' using the fillna() method.
+4. Encoding Categorical Features: Since machine learning algorithms typically require numerical input, categorical features like Severity, Tool Category, Tool Name, and Rule Name were encoded into numerical format. One-hot encoding was employed for this purpose, it abstracts away the details of creating dummy variables and concatenating these dummy variable columns with the original DataFrame to produce the final one-hot encoded DataFrame.
+5. Text Vectorization (TF-IDF): The 'Description' feature, which contained detailed textual descriptions of vulnerabilities, required special treatment due to its nature. Textual data cannot be directly used as input for most machine learning algorithms. Therefore, it was transformed into a numerical format using TF-IDF vectorization.
+6. Combining Text Vectors with Encoded Features: The combined dataset (X) contained both the TF-IDF transformed textual vectors and the encoded categorical features. Here's what X looks like:
 * The first part of X consists of the TF-IDF transformed textual descriptions. Each row corresponds to a sample (or document) in the dataset, and each column corresponds to a word (or token) in the vocabulary. The values in each cell represent the TF-IDF score of the corresponding word in the corresponding document.
 * The second part of X consists of other encoded features (excluding Description and Status). These features are represented as numerical values obtained after encoding categorical variables or other preprocessing steps.
 Combined, X represents the complete set of input features that will be used to train the machine learning model.
