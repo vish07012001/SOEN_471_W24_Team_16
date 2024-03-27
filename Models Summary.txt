@@ -1,14 +1,15 @@
-﻿Data Preprocessing
+Data Preprocessing
     1. Loading the Data
     2. Concatenating Dataframes
-    3. Handling Null Values:
-    * Categorical features were handled by introducing a new category 'missing' using SimpleImputer with the 'constant' strategy, which fills missing values with a the value 'missing'.
-    * Numerical feature 'CWE' was handled by imputing missing values with the median using SimpleImputer with the 'median' strategy.
-    4. Encoding Categorical Features: Since machine learning algorithms typically require numerical input, categorical features like Severity, Tool Category, Tool Name, and Rule Name were encoded into numerical format. One-hot encoding was employed for this purpose, it abstracts away the details of creating dummy variables and concatenating these dummy variable columns with the original DataFrame to produce the final one-hot encoded DataFrame.
+    3. Remove unnecessary columns: Description was removed as it did not contribute to better performance of the models. 
+    4. Handling Null Values:
+        * Categorical features were handled by introducing a new category 'missing' using SimpleImputer with the 'constant' strategy, which fills missing values with the value 'missing'.
+        * Numerical feature 'CWE' was handled by imputing missing values with the median using SimpleImputer with the 'median' strategy.
+    5. Encoding Categorical Features: Since machine learning algorithms typically require numerical input, categorical features like Severity, Tool Category, Tool Name, and Rule Name were encoded into numerical format. One-hot encoding was employed for this purpose, it abstracts away the details of creating dummy variables and concatenating these dummy variable columns with the original DataFrame to produce the final one-hot encoded DataFrame.
 
 Hyperparameters Tuning
     Grid Search and Random Search were used for Hyperparameters Tuning for both Decision Tree and Random Forest. 
-    Grid Search: 
+    1. Grid Search: 
         - Decision Tree: This exhaustive search over specified parameter values for the Decision Tree model aimed to identify the combination of parameters that could maximize the model's accuracy. 
             - Best parameters: {'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2}
             - Best score: 0.9399546722454672
@@ -18,7 +19,7 @@ Hyperparameters Tuning
             - Best score: 0.9416213389121338
             - Test Accuracy: 0.9408333333333333
 
-    Random Search:
+    2. Random Search:
         - Decision Tree: This method samples a subset of hyperparameters from a defined distribution, offering a faster, yet still effective, approach to identifying optimal parameters.
             - Best parameters: {'criterion': 'entropy', 'max_depth': 11, 'min_samples_leaf': 2, 'min_samples_split': 2}
             - Best score: 0.9399546722454672
@@ -28,12 +29,11 @@ Hyperparameters Tuning
             - Best score: 0.9416213389121338
             - Test Accuracy: 0.9408333333333333
     
-    We decided to use these hyperparameter:
-    Decison Tree: {'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2}
-    Random Forest: {'bootstrap': True, 'max_depth': 30, 'min_samples_leaf': 1, 'min_samples_split': 9, 'n_estimators': 288}
+    We decided to use these hyperparameters:
+    * Decision Tree: {'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2}
+    * Random Forest: {'bootstrap': True, 'max_depth': 30, 'min_samples_leaf': 1, 'min_samples_split': 9, 'n_estimators': 288}
         
 Model Evaluation
-    * From the evaluation results of the Decision Tree Classifier and the Random Forest Classifier, it appears that the default hyperparameters for both models already yield high performance. 
-    * Upon fine-tuning the models, changing the test size, or applying cross-validation, the evaluation results may not necessarily improve. The default settings of the hyperparameters (such as the maximum depth of the tree, minimum samples per leaf, etc.) result in a model that is not too simple or too complex. In other words, the default hyperparameters strike a good balance between capturing the underlying patterns in the data and avoiding overfitting.
+    * Upon fine-tuning the models, the evaluation results did not improve. The default settings of the hyperparameters result in a model that is not too simple or too complex. In other words, the default hyperparameters strike a good balance between capturing the underlying patterns in the data and avoiding overfitting while achieving good results.
     * Surprisingly, the Random Forest Classifier, even with default hyperparameters, did not outperform the Decision Tree Classifier as anticipated. Both classifiers achieve similar performance metrics, indicating that in this particular dataset and task, the ensemble approach of Random Forest did not offer significant advantages over the single Decision Tree model.
     * Overall, the results suggest that the default hyperparameters of both models work well for this dataset. Fine-tuning the hyperparameters did not lead to substantial improvements in performance, indicating that the default settings already capture the underlying patterns in the data effectively.
