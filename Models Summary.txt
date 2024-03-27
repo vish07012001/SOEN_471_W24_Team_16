@@ -2,35 +2,35 @@
     1. Loading the Data
     2. Concatenating Dataframes
     3. Handling Null Values:
-    * Categorical features were handled by introducing a new category 'missing' using SimpleImputer with the 'constant' strategy, which fills missing values with a the value 'missing'.
+    * Categorical features were handled by introducing a new category 'missing' using SimpleImputer with the 'constant' strategy, which fills missing values with the value 'missing'.
     * Numerical feature 'CWE' was handled by imputing missing values with the median using SimpleImputer with the 'median' strategy.
     4. Encoding Categorical Features: Since machine learning algorithms typically require numerical input, categorical features like Severity, Tool Category, Tool Name, and Rule Name were encoded into numerical format. One-hot encoding was employed for this purpose, it abstracts away the details of creating dummy variables and concatenating these dummy variable columns with the original DataFrame to produce the final one-hot encoded DataFrame.
 
 Hyperparameters Tuning
     Grid Search and Random Search were used for Hyperparameters Tuning for both Decision Tree and Random Forest. 
-    Grid Search: 
-        - Decision Tree: This exhaustive search over specified parameter values for the Decision Tree model aimed to identify the combination of parameters that could maximize the model's accuracy. 
+    1. Grid Search: 
+        * Decision Tree: This exhaustive search over specified parameter values for the Decision Tree model aimed to identify the combination of parameters that could maximize the model's accuracy. 
             - Best parameters: {'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2}
             - Best score: 0.9399546722454672
             - Test Accuracy: 0.9408333333333333
-        - Random Forest: Leveraging the same systematic approach as with the Decision Tree, we applied Grid Search to the Random Forest Classifier. Given the complexity and the inherently higher number of hyperparameters in Random Forest models, this stage was crucial in dissecting and understanding the influence of each hyperparameter on the ensemble's performance.
+        * Random Forest: Leveraging the same systematic approach as with the Decision Tree, we applied Grid Search to the Random Forest Classifier. Given the complexity and the inherently higher number of hyperparameters in Random Forest models, this stage was crucial in dissecting and understanding the influence of each hyperparameter on the ensemble's performance.
             - Best parameters: {'criterion': 'entropy', 'max_depth': 11, 'min_samples_leaf': 2, 'min_samples_split': 2}
             - Best score: 0.9399546722454672
             - Test Accuracy: 0.9408333333333333
 
-    Random Search:
-        - Decision Tree: This method samples a subset of hyperparameters from a defined distribution, offering a faster, yet still effective, approach to identifying optimal parameters.
+    2. Random Search:
+        * Decision Tree: This method samples a subset of hyperparameters from a defined distribution, offering a faster, yet still effective, approach to identifying optimal parameters.
             - Best parameters: {'bootstrap': True, 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
             - Best score: 0.9416213389121338
             - Test Accuracy: 0.9408333333333333
-        - Random Forest: Efficiently navigating the extensive hyperparameter landscape of the Random Forest, and took less time than grid search 
+        * Random Forest: Efficiently navigating the extensive hyperparameter landscape of the Random Forest, and took less time than grid search 
             - Best parameters: {'bootstrap': True, 'max_depth': 30, 'min_samples_leaf': 1, 'min_samples_split': 9, 'n_estimators': 288}
             - Best score: 0.9416213389121338
             - Test Accuracy: 0.9408333333333333
     
-    We decided to use these hyperparameter:
-    Decison Tree: {'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2}
-    Random Forest: {'bootstrap': True, 'max_depth': 30, 'min_samples_leaf': 1, 'min_samples_split': 9, 'n_estimators': 288}
+    We decided to use these hyperparameters:
+    * Decision Tree: {'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2}
+    * Random Forest: {'bootstrap': True, 'max_depth': 30, 'min_samples_leaf': 1, 'min_samples_split': 9, 'n_estimators': 288}
         
 Model Evaluation
     * Upon fine-tuning the models, the evaluation results did not improve. The default settings of the hyperparameters result in a model that is not too simple or too complex. In other words, the default hyperparameters strike a good balance between capturing the underlying patterns in the data and avoiding overfitting while achieving good results.
