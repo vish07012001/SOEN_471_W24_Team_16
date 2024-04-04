@@ -27,7 +27,7 @@ Hyperparameters Tuning
     
     We decided to use these hyperparameters on a training set that is 50% of the dataset:
     * Decision Tree: {'criterion': 'entropy', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2}
-    * Random Forest: {'bootstrap': False, 'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 195}
+    * Random Forest: {'bootstrap': False, 'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 100}
         
 Model Evaluation
     * Upon fine-tuning the models, the evaluation results did not improve aggressively. The default settings of the hyperparameters result in a model that is not too simple or too complex. In other words, the default hyperparameters strike a good balance between capturing the underlying patterns in the data and avoiding overfitting while achieving good results.
